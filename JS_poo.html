@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>POO</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--<script src="JS_externo.js"></script> -->
+    <!-- <script src="Jquery/jquery-1.6.3.min.js"></script> -->
+  </head>
+  
+  <body>
+  <div class="caja_texto">
+    <h1 class="textos-2">Programación Orientada a objetos</h1>
+    <h3 class="textos-2">Modificación de elementos del DOM como objetos</h3>
+    </br>
+    <p class="textos-2">Se toma un botón como ejemplo y se modifica su ancho a travez de javascript</p>
+    </br>
+    <input type="button" value="antes" class="boton">
+    <input type="button" value="después" id="boton" class="boton">
+    <input type="text" id="texto" style="background: white; margin-left: 5%; color: black;">
+
+  </div>
+  <div class="codigo">  
+      <p>Resultado del script =></p></br>
+      <p>El botón ha cambiado su ancho (width) y se le ha colocado el foco al cuadro de texto</p>
+    <div>
+        <script>
+            var boton=document.getElementById("boton");
+            var texto=document.getElementById("texto");
+            boton.style.width="200px";
+            texto.focus();
+            
+        </script>
+    </div>
+  </div>
+  </body>
+  <footer><a href="JS_index.html">Volver a Inicio</footer>
+</html>

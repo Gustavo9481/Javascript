@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--<script src="JS_externo.js"></script> -->
+    <!-- <script src="Jquery/jquery-1.6.3.min.js"></script> -->
+  </head>
+  
+  <body>
+  <div class="caja_texto">
+    <h1 class="textos-2">Arrays</h1>
+    <h3 class="textos-2">Arreglo de datos equivalentes a las listas en python</h3>
+    </br>
+    <p class="textos-2">Propiedades y métodos comunes</p>
+    </br>
+
+  </div>
+  <div class="codigo">  
+      <p>Resultado del script =></p>
+      <div>
+        <script>
+            var colores=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            document.write(`<p class="resultado_inline">lista original colores: ${colores}</p></br>`);
+            var colores_1=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            document.write(`<p class="resultado_inline"><b>propiedad length</b>: ${colores_1.length}</p>`);
+            var colores_2=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            colores_2.push("blanco");
+            document.write(`<p class="resultado_inline"><b>método push()</b>: ${colores_2}</p>`);
+            var colores_3=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            colores_3.unshift("blanco");
+            document.write(`<p class="resultado_inline"><b>método unshift()</b>: ${colores_3}</p>`);
+            var colores_4=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            document.write(`<p class="resultado_inline"><b>método pop()</b>: ${colores_4.pop()} se elimina de la lista</p>`);
+            var colores_5=["azul", "rojo", "amarillo", "verde", "violeta", "negro"];
+            document.write(`<p class="resultado_inline"><b>método shift()</b>: ${colores_5.shift()} se elimina de la lista</p>`);
+            document.write(`<p class="resultado_inline"><b>acceso a elementos</b>: índice[2] ${colores[2]}</p>`);
+            
+    
+
+
+
+        </script>
+    </div>
+  </div>
+  </body>
+  <footer><a href="JS_index.html">Volver a Inicio</footer>
+</html>

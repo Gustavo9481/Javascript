@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Card - Bucle While</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--<script src="JS_externo.js"></script> -->
+    <!-- <script src="Jquery/jquery-1.6.3.min.js"></script> -->
+  </head>
+  
+  <body>
+
+  <div class="caja_texto">
+    <h1 class="textos-2">Card - Bucle While</h1>
+    <h3 class="textos-2">Bucle de acción indeterminada</h1>
+    </br>
+    <p class="textos-2">Rellenaremos los datos de la tarjeta a travez de javascript</p>
+    </br>
+    <p class="textos-2"><b><a href="JS_while.html">Bucle While</a></b></p>
+  </div>
+
+  <div class="codigo">  
+      <p>Resultado del script =></p>
+      <div>
+        <script>
+            let edad = prompt("edad ?", "edad");
+            while(edad < 18 || edad > 100 || isNaN(edad)){
+                edad = prompt("Ingrese una edad válida");
+            }
+            let usuario = prompt("Ingrese su usuario", "usuario");
+            let nombre = prompt("Ingrese su nombre", "nombre");
+            while (!isNaN(nombre)){
+                nombre = prompt("Ingrese un nombre válido","nombre");
+            }
+            let email = prompt("Ingrese su correo electrónico", "email");
+        </script>
+      </div>
+  </div>
+
+  <div class="card">
+    <img class="img_2" src="img/gus.jpeg">
+    <p class="resultado_inline">Usuario: <b><script>document.write(usuario);</script></b></p>
+    <p class="resultado_inline">Nombre: <b><script>document.write(nombre);</script></b></p>
+    <p class="resultado_inline">Email: <b><script>document.write(email);</script></b></p>
+    <p class="resultado_inline">Edad: <b><script>document.write(edad);</script></b></p>
+  </div>
+
+  </body>
+  <footer><a href="JS_index.html">Volver a Inicio</footer>
+</html>

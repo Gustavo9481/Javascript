@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #1C1B22;
+  color: #8f8ab1;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ----- Textos ----- */
+.caja_texto {
+  display: block;
+  margin: 2% auto 0 auto;
+}
+
+
+.textos {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* ----- imagen ----- */
+.caja_img {
+  display: flex;
+  width: 100%;
+  margin: 3% auto 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_1 {
+  width: 15%;
+  height: 27vh;
+  border-radius: 50%;
+}
+
+.img_1:hover {
+  width: 20%;
+  height: 37vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  color: #7ec4a8 !important;
+}
+
+.textos-2 {
+  width: 100%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.lista {
+  margin: 5% auto auto 5%;
+}
+
+.codigo {
+  margin: 5% auto 5% 5%;
+}
+
+.resultado {
+  color: #7ec4a8 !important;
+  margin-top: 3%;
+}
+
+.resultado_inline {
+  color: #7ec4a8 !important;
+}
+
+footer {
+  margin: 5% auto 3% 5%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.boton {
+  display: block;
+  margin-left: 5%;
+  background-color: #7ec4a8;
+  border-radius: 5%;
+  color: #1C1B22;
+}
+
+/* ----- card while ----- */
+.card {
+  width: 30%;
+  height: 250px;
+  margin: 5px auto 5px auto;
+  padding: 10px;
+  border: 2px solid #7ec47e;
+  border-radius: 8px;
+}
+
+.img_2 {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 15px auto 35px auto;
+}

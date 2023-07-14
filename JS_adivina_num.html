@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adivina el Número</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--<script src="JS_externo.js"></script> -->
+    <!-- <script src="Jquery/jquery-1.6.3.min.js"></script> -->
+  </head>
+  
+  <body>
+
+  <div class="caja_texto">
+    <h1 class="textos-2">Adivina en número</h1>
+    <h3 class="textos-2">Bucle de acción indeterminada DO</h1>
+    </br>
+    <p class="textos-2">El usuario debe adivinar el número entre 0 y 10</p>
+    </br>
+    <p class="textos-2"><b><a href="JS_while.html">Bucle While</a></b></p>
+  </div>
+
+  <div class="codigo">  
+      <p>Resultado del script =></p>
+      <input type="text" value="" id="mensaje">
+      <div> 
+        <script>
+            // Adivina el número
+
+var numeroAleatorio = Math.round(Math.random() * 10);
+var numero = 0, intentos = 0;
+var boton = document.getElementById("mensaje");
+
+do {
+    numero = prompt("Introduce un número entre 0 y 10");
+
+    if (numeroAleatorio > numero){
+        intentos++
+        alert(`El número es más alto, llevas ${intentos} intentos`);
+    }
+
+    if (numeroAleatorio < numero){
+        intentos++
+        alert(`El número es más bajo, llevas ${intentos} intentos`);
+    }
+    
+
+} while(numeroAleatorio != numero);
+
+boton.value = "ADIVINASTE !!!";
+        </script>
+      </div>
+  </div>
+   
+
+  </body>
+  <footer><a href="JS_index.html">Volver a Inicio</footer>
+</html>

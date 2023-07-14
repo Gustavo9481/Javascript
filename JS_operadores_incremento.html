@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Operadores de Incremento</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--<script src="JS_externo.js"></script> -->
+    <!-- <script src="Jquery/jquery-1.6.3.min.js"></script> -->
+  </head>
+  
+  <body>
+  <div class="caja_texto">
+    <h1 class="textos-2">Operadores de Incremento</h1>
+    <h3 class="textos-2">Operadores que permiten el incremento o decremento del valor de una variable</h1>
+    </br>
+    <p class="textos-2">Se le aplicarán todos los operadores con valor 2 a una variable de valor 10</p>
+    </br>
+
+  </div>
+  <div class="codigo">  
+      <p>Resultado del script =></p>
+      <div>
+        <script>
+    
+    
+
+    var var_1=10, var_2=10, var_3=10, var_4=10, var_5=10, var_6=10;
+    var incremento=var_1+=2;
+    var decremento=var_2-=2;
+    var multiplicador=var_3*=2;
+    var divisor=var_4/=2;
+
+    document.write(`<div class="resultado"><p class="resultado_inline">variable = 10</p>`);
+    document.write(`<p class="resultado_inline">Incremento: ${incremento}</p>`);
+    document.write(`<p class="resultado_inline">Decremento: ${decremento}</p>`);
+    document.write(`<p class="resultado_inline">Multiplicador: ${multiplicador}</p>`);
+    document.write(`<p class="resultado_inline">Divisor: ${divisor}</p>`);
+    document.write(`<p class="resultado_inline">Incremento en 1: ${var_5++}</p>`);
+    document.write(`<p class="resultado_inline">Decremento en 1: ${var_6--}</p>`);
+    document.write(`</div>`);
+
+
+        </script>
+    </div>
+  </div>
+  </body>
+  <footer><a href="JS_index.html">Volver a Inicio</footer>
+</html>
