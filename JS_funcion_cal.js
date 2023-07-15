@@ -46,7 +46,7 @@ do {
         if (operacion == "dividir"){
             divide(num1, num2)
         }
-
+        
         operacion = prompt("Quiere realizar otra operación?").toLowerCase()
     }
     
