@@ -102,3 +102,53 @@ footer {
   border-radius: 50%;
   margin: 15px auto 35px auto;
 }
+
+
+/* ----- calculadora UI ----- */ 
+.cal {
+  display: block;
+  width: 300px;
+  height: 380px;
+  background-color: #2a2730;
+  margin: auto;
+}
+
+.cal_display {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #2a2730;
+  justify-content: center;
+  align-content: center;
+}
+
+.cal_dis_text {
+  display: block;
+  margin: 5px auto 5px auto;
+  width: 95%;
+  border-radius: 10%;
+  border: none;
+}
+
+.cal_botones {
+  display: grid;
+  width: 95%;
+  height: 280px;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 5px;
+  margin: 5px auto 5px auto;
+}
+
+.boton {
+  border-radius: 10%;
+  background-color: #3e3946;
+  border: none;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
