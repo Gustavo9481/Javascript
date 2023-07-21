@@ -42,19 +42,16 @@ function operacion(signo){
 function resultado(){
   valor_2 = document.getElementById("texto").value
   document.getElementById("operation").value = op_display + valor_2
-  if (op_signo == "+"){
-    total = parseFloat(valor_1) + parseFloat(valor_2); 
+
+  let tarea = {
+    '+': parseFloat(valor_1) + parseFloat(valor_2),
+    '-': parseFloat(valor_1) - parseFloat(valor_2),
+    '*': parseFloat(valor_1) * parseFloat(valor_2),
+    '/': parseFloat(valor_1) / parseFloat(valor_2)
   }
-  if (op_signo == "-"){
-    total = parseFloat(valor_1) - parseFloat(valor_2);   
-  }
-  if (op_signo == "*"){
-    total = parseFloat(valor_1) * parseFloat(valor_2);
-  }
-  if (op_signo == "/"){
-    total = parseFloat(valor_1) / parseFloat(valor_2);
-  }
+
+  total = tarea[op_signo]
   cifra = ""
-  op_signo = ""
   document.getElementById("texto").value = total.toFixed(2)
-}
+} 
+
