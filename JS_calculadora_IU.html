@@ -21,7 +21,7 @@
       <p>Resultado del script =></p></br>
       
     <div>
-        <script src="JS_calculadora_IU.js">
+        <script src="JS_calculadora_IU-2.js">
 
           
 
@@ -30,31 +30,31 @@
   </div>
   <div class="cal">
       <div class="cal_display cal_display_2">
-        <input type="text" class="cal_dis_text cal_dis_op" id="operation" value="">
+        <input type="text" class="cal_dis_text cal_dis_op" id="display_ecuacion" value="">
       </div>
       <div class="cal_display">
-        <input type="text" class="cal_dis_text" id="texto" value="">
+        <input type="text" class="cal_dis_text" id="display_principal" value="">
       </div>
       <div class="cal_botones">
-        <button class="boton area_7" type="button" onclick="pulsar_boton(7)">7</button>
-        <button class="boton area_8" type="button" onclick="pulsar_boton(8)">8</button>
-        <button class="boton area_9" type="button" onclick="pulsar_boton(9)">9</button>
-        <button class="boton area_sum" type="button" onclick="operacion('+')">+</button>
-        <button class="boton area_4" type="button" onclick="pulsar_boton(4)">4</button>
-        <button class="boton area_5" type="button" onclick="pulsar_boton(5)">5</button>
-        <button class="boton area_6" type="button" onclick="pulsar_boton(6)">6</button>
-        <button class="boton area_res" type="button" onclick="operacion('-')">-</button>
-        <button class="boton area_1" type="button" onclick="pulsar_boton(1)">1</button>
-        <button class="boton area_2" type="button" onclick="pulsar_boton(2)">2</button>
-        <button class="boton area_3" type="button" onclick="pulsar_boton(3)">3</button>
-        <button class="boton area_mul" type="button" onclick="operacion('*')">*</button>
-        <button class="boton area_dot" type="button" onclick="pulsar_boton('.')">.</button>
-        <button class="boton area_0" type="button" onclick="pulsar_boton(0)">0</button>
-        <button class="boton area_00" type="button" onclick="pulsar_boton('00')" >00</button>
-        <button class="boton area_div" type="button" onclick="operacion('/')">/</button>
+        <button class="boton area_7" type="button" onclick="pulsar_numero('7')">7</button>
+        <button class="boton area_8" type="button" onclick="pulsar_numero('8')">8</button>
+        <button class="boton area_9" type="button" onclick="pulsar_numero('9')">9</button>
+        <button class="boton area_sum" type="button" onclick="pulsar_signo('+')">+</button>
+        <button class="boton area_4" type="button" onclick="pulsar_numero('4')">4</button>
+        <button class="boton area_5" type="button" onclick="pulsar_numero('5')">5</button>
+        <button class="boton area_6" type="button" onclick="pulsar_numero('6')">6</button>
+        <button class="boton area_res" type="button" onclick="pulsar_signo('-')">-</button>
+        <button class="boton area_1" type="button" onclick="pulsar_numero('1')">1</button>
+        <button class="boton area_2" type="button" onclick="pulsar_numero('2')">2</button>
+        <button class="boton area_3" type="button" onclick="pulsar_numero('3')">3</button>
+        <button class="boton area_mul" type="button" onclick="pulsar_signo('*')">*</button>
+        <button class="boton area_dot" type="button" onclick="pulsar_numero('.')">.</button>
+        <button class="boton area_0" type="button" onclick="pulsar_numero('0')">0</button>
+        <button class="boton area_00" type="button" onclick="pulsar_numero('00')" >00</button>
+        <button class="boton area_div" type="button" onclick="pulsar_signo('/')">/</button>
         <button class="boton area_C" type="button" onclick="borrar_todo()" >C</button>
         <button class="boton area_del" type="button" onclick="borrar_ultimo()" >◀️</button>
-        <button class="boton area_equ" type="button" onclick="resultado()">=</button>
+        <button class="boton area_equ" type="button" onclick="calcular_resultado()">=</button>
       </div>
   </div>
   </body>
