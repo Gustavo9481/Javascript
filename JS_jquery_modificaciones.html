@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery cambio de elementos</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+    <script src="Jquery/jquery-1.6.3.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var cuadrados_grises = document.querySelectorAll("#cuadrados div")
+
+      for (var i = 0; i < cuadrados_grises.length; i++){
+        cuadrados_grises[i].addEventListener("click", cambio, false)
+      }
+      console.log(cuadrados_grises)
+
+      function cambio(e){
+        if (e.target.id == 'cuadrado1'){
+          $("#cuadrado1").replaceWith("<div id='cuadrado1' class='rojo'>Cambio</div>")
+        }
+        if (e.target.id == 'cuadrado2'){
+          $("#cuadrado2").replaceWith("<div id='cuadrado2' class='rojo'>Cambio</div>")
+        }
+        if (e.target.id == 'cuadrado3'){
+          $("#cuadrado3").replaceWith("<div id='cuadrado3' class='rojo'>Cambio</div>")
+        }
+      }
+    })
+    </script>
+  </head>
+  <body>
+    <div id="cuadrados">
+      <div id="cuadrado1" class="gris"></div>
+      <div id="cuadrado2" class="gris"></div>
+      <div id="cuadrado3" class="gris"></div>
+    </div>
+    <div class="lista">
+      <ul>
+        <li><a href="JS_prompt.html">Función prompt</a>
+        <li><a href="JS_operadores_incremento.html">Operadores de Incremento</a>
+        <li><a href="JS_arrays.html">Arrays</a>
+        <li><a href="JS_poo.html">Programación Orientada a objetos</a></li>
+        <li><a href="JS_if.html">Condicional IF</a></li>
+        <li><a href="JS_while.html">Bucle While</a></li>
+        <li><a href="JS_for.html">Bucle For</a></li>
+        <li><a href="JS_funciones.html">Funciones</a></li>
+        <li><a href="JS_calculadora_IU.html">Calculadora UI</a></li>
+        <li><a href= "html_jquery_basic.html">JQuery</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>

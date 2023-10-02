@@ -195,8 +195,25 @@ footer {
   background-color: #A8A8A8;
 }
 
+#cuadrados {
+  display: flex;
+}
 
+.gris {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  margin: 10px;
+  color: black;
+}
 
+.rojo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  color: black;
+}
 
 
 
