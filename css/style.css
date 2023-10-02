@@ -195,8 +195,11 @@ footer {
   background-color: #A8A8A8;
 }
 
+
+/* JQuery */
 #cuadrados {
   display: flex;
+  margin-left: 5%;
 }
 
 .gris {
